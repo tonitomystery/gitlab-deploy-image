@@ -55,7 +55,7 @@ deploy:
 - Entorno preconfigurado para despliegues SSH
 deploy:
   stage: deploy
-  image: yourusername/gitlab-deploy:latest
+  image: amaristany/gitlab-deploy:latest
   needs:
     - build
   variables:
