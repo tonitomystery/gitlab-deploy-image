@@ -31,7 +31,7 @@ deploy:
         set -e &&
         echo 'Iniciando despliegue...' &&
         cd /tmp &&
-        sudo unzip -o code.zip -d \$DEPLOY_PATH && 
+        sudo unzip -o code.zip -d /ruta/de/despliegue &&
         # ...resto del script de despliegue...
       "
 ```
