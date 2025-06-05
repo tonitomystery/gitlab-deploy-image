@@ -27,7 +27,7 @@ deploy:
 ```yaml
 deploy:
   stage: deploy
-  image: amaristany/gitlab-deploy:latest
+  image: amaristany/alpine-ssh:latest
   needs:
     - build
   variables:
@@ -55,7 +55,7 @@ deploy:
 - Entorno preconfigurado para despliegues SSH
 deploy:
   stage: deploy
-  image: amaristany/gitlab-deploy:latest
+  image: amaristany/alpine-ssh:latest
   needs:
     - build
   variables:
