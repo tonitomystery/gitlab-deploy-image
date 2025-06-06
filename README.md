@@ -50,8 +50,13 @@ Este repositorio usa GitHub Actions para:
 - Compilar la imagen Docker automáticamente
 - Publicar en Docker Hub con cada push a main
 - Crear tags con el SHA del commit para versionado
+
 ## Benefits
 
 - No more package installation on every deployment
 - Faster CI/CD pipeline execution
 - Pre-configured environment for SSH deployments
+
+## Configuración de secretos
+
+Es necesario establecer el secreto `SSH_PRIVATE_KEY` para que la aplicación funcione correctamente. Este secreto debe contener la clave privada SSH que se utilizará para las conexiones seguras requeridas por la aplicación.
