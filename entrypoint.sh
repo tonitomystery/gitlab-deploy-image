@@ -23,7 +23,8 @@ chmod 600 ~/.ssh/config
 # Add key to SSH agent
 ssh-add ~/.ssh/id_rsa
 
-# ...puedes agregar lógica personalizada aquí si lo necesitas...
+echo "SSH key setup complete."
+
 exec "$@"
 
 
