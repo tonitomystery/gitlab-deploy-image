@@ -7,7 +7,8 @@ RUN apk add --no-cache \
     openssh-client \
     openssh-keygen \
     curl \
-    bash
+    bash \
+    rsync
 
 RUN mkdir -p /root/.ssh && \
     chmod 700 /root/.ssh && \
