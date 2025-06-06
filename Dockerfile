@@ -14,5 +14,8 @@ RUN mkdir -p /root/.ssh && \
     echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config && \
     echo "UserKnownHostsFile /dev/null" >> /etc/ssh/ssh_config
 
-CMD ["bash"]
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
 
