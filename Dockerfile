@@ -1,5 +1,8 @@
 FROM alpine:3.22
 
+LABEL org.opencontainers.image.title="Alpine SSH"
+LABEL org.opencontainers.image.description="Imagen Docker basada en Alpine Linux con soporte para SSH. Ideal para tareas de automatización, CI/CD y despliegue seguro."
+
 RUN apk add --no-cache \
     openssh-client \
     openssh-keygen \
