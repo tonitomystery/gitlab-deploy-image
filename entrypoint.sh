@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 # Validaciones básicas
@@ -23,4 +23,7 @@ chmod 600 ~/.ssh/config
 # Add key to SSH agent
 ssh-add ~/.ssh/id_rsa
 
- 
+# ...puedes agregar lógica personalizada aquí si lo necesitas...
+exec "$@"
+
+

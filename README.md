@@ -25,7 +25,7 @@ deploy:
     - ssh $SSH_CONNECTION "echo 'SSH connection successful'"
 
     - echo "Desplegando en $SSH_CONNECTION..."
-    - scp -o StrictHostKeyChecking=no -v code.zip $SSH_CONNECTION:/tmp/
+    - scp code.zip $SSH_CONNECTION:/tmp/
     - |
       ssh $SSH_CONNECTION "
         set -e &&
